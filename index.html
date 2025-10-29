@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="fundo">
+        <main class="container-calc">
+            <H1 class="titulo">Calculadora</H1>
+            <hr>
+
+            <div class="num1">
+                <p>Primeiro Numero:</p>
+                <input type="number" class="tela" id="primeiroNumero">
+            </div>
+
+            <div class="operacoes">
+                <p>Escolha um operação</p>
+                <select id="operacao">
+                    <option value="soma">soma</option>
+                    <option value="subtracao">subtração</option>
+                    <option value="multiplicacao">multiplicação</option>
+                    <option value="divisao">divisão</option>
+                </select>
+            </div>
+
+            <div class="num2">
+                <p>Segundo numero</p>
+                <input type="number" class="tela" id="segundoNumero">
+            </div>
+            <button id="calcular" onclick="calcular()">calcular</button>
+            <hr>
+
+            <div class="resultado-container">
+                <h1>Resultado:</h1>
+
+                <div class="resultado">
+                    <p id="resultado"></p>
+                </div>
+            </div>
+
+            <hr>
+        </main>
+    </section>
+
+</body>
+
+<script src="./js/calculadora.js"></script>
+<script src="./js/divisao.js"></script>
+<script src="./js/multiplicacao.js"></script>
+<script src="./js/soma.js"></script>
+<script src="./js/subtracao.js"></script>
+<script src="./js/validacaoCor.js"></script>
+
+</html>
